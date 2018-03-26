@@ -1,0 +1,153 @@
+/*
+*
+*@author Oteniel França
+*@version 0.1
+*/
+
+/* ================= Layout ============= */
+
+/* ----------- Formatação do Body ---------- */
+
+html, body, .capa{
+    height: 100%;
+}
+
+body {
+	
+	background: url('imagens/capa.png'),
+	            url('imagens/ruido.png'),
+	            linear-gradient(50deg, #ff4169, #7c26f8);/* a virgula fez sobrepor uma imagen na outra e as duas estão com efeito opaco */
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;/* tira a barra de rolagem horizontal */
+}   
+
+/* ----------- Barra de navegação ---------- */
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain; /* Define o tamanho da img de fundo*/
+	color: transparent;
+}
+nav.navbar-transparente {
+   padding: 15px 0px;
+   background: rgba(0, 0, 0, 0.5);
+   border: none;
+}
+.navbar-brand{
+	padding: 5px 15px;
+}
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a, #rodape .nav a {/*O sinal de maior acessa o filho imediato e com virgula pode-se acrescentar o que quiser*/
+     color: white;    
+}
+.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover {/*O sinal de maior acessa o filho imediato*/
+     color: #9bf0e1;
+     background: none;    
+}
+
+/* ----------- Imagem de capa ---------- */
+.capa{
+
+	display: table;
+	width: 100%;
+}
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* ----------- Botões ---------- */
+.btn-custom{
+	color: white;
+	border-radius: 500px;/*Arredonda os cantos do buton*/
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	margin: 0px 15px;/*Define a margen externa do buton*/
+	padding: 10px 35px;/*Define a margen interna do buton*/
+	text-transform: uppercase; /*Transforma todas as letras em maiúsculas*/
+	transition: background 0.4s, color 0.4s;/*Faz mudar a cor suavemente*/
+}
+.btn-roxo{
+     background: #7c25f8;
+}
+.btn-roxo:hover {
+     background-color: #6207e3;
+     color: white;
+}
+
+.btn-branco{
+     border: 2px solid white;
+}
+.btn-branco:hover{
+     background-color: white;
+     color: black;
+}
+/* ----------- Seção Serviço ---------- */
+#servicos{
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+/* ----------- Recursos ---------- */
+#recursos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.rotacionar{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);/* IE 9*/
+	-webkit-transform: rotate(30deg);/* Chrome, Safari, Opera */
+	padding-left: 70px;
+}
+/* ----------- Rodapé ---------- */
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+.item-rede-social {
+	float: right;
+}
+
+/* ========== Tipografia ===========*/
+h1{
+	font-size: 100px;
+	font-weight: 900px;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+h2{
+	font-size: 50px;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+h3{
+	font-size: 35px;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+#rodape h4{
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#servicos h2, #servicos h3{ /*Somente h2 e h3 receberao a cor roxa, pode-se escolher o que estiver dentro de serviços*/
+	color: #7c25f8;
+}
+#recursos h3{ /*Somente h3 recebera cor, pode-se escolher o que estiver dentro de serviços*/
+	color: #9bf0e1;
+}
